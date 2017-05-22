@@ -13,5 +13,6 @@ font will be at the top level.
 
 ## License
 
-Tools and most image resources are under the [Apache license, version 2.0](./LICENSE).
+Tools are under the [Apache license, version 2.0](./LICENSE).
+
 [EmojiOne image license](https://www.emojione.com/developers/free-license)

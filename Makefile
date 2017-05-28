@@ -18,6 +18,7 @@ font: $(EMOJI).ttf
 # zopflipng is better (about 5-10%) but much slower.  it will be used if
 # present.  pass ZOPFLIPNG= as an arg to make to use optipng instead.
 
+NOCOMPRESSING ?= 0
 ZOPFLIPNG = zopflipng
 OPTIPNG = optipng
 
@@ -51,6 +52,12 @@ ifeq (,$(shell which $(OPTIPNG)))
   endif
 endif
 
+ifdef MISSING_ZOPFLI
+  ifdef MISSING_OPTIPNG
+    NOCOMPRESSING = 1
+  endif
+endif
+
 ifeq (, $(shell which $(VS_ADDER)))
   MISSING_ADDER = fail
 endif
@@ -63,12 +70,19 @@ compressed: $(ALL_FILES)
 check_compress_tool:
 ifdef MISSING_ZOPFLI
   ifdef MISSING_OPTIPNG
-	$(error "neither $(ZOPFLIPNG) nor $(OPTIPNG) is available")
+	@echo "neither $(ZOPFLIPNG) nor $(OPTIPNG) is available"
   else
+    ifeq ($(NOCOMPRESSING),0)
 	@echo "using $(OPTIPNG)"
+    endif
   endif
 else
+  ifeq ($(NOCOMPRESSING),0)
 	@echo "using $(ZOPFLIPNG)"
+  endif
+endif
+ifeq ($(NOCOMPRESSING),1)
+	@echo "no compressing"
 endif
 
 check_vs_adder:
@@ -81,10 +95,14 @@ $(EMOJI_DIR) $(FLAGS_DIR) $(RESIZED_FLAGS_DIR) $(RENAMED_FLAGS_DIR) $(QUANTIZED_
 	mkdir -p "$@"
 
 $(COMPRESSED_DIR)/%.png: $(EMOJI_DIR)/%.png | check_compress_tool $(COMPRESSED_DIR)
-ifdef MISSING_ZOPFLI
+ifeq ($(NOCOMPRESSING),0)
+  ifdef MISSING_ZOPFLI
 	@$(OPTIPNG) -quiet -o7 -clobber -force -out "$@" "$<"
-else
+  else
 	@$(ZOPFLIPNG) -y "$<" "$@" 1> /dev/null 2>&1
+  endif
+else
+	@cp "$<" "$@"
 endif
 
 rename: $(ALL_FILES)

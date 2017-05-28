@@ -7,9 +7,9 @@ data used by nototools).  You will also need fontTools, get it from
 https://github.com/behdad/fonttools.git.
 
 Then run make.  EmojiOne is the default target.  It's suggested to use -j,
-especially if you are using zopflipng for compression.  Intermediate products
-(compressed image files, for example) will be put into a build subdirectory; the
-font will be at the top level.
+especially if you are using zopflipng for compression.  Or you can use `NOCOMPRESSING=1`
+to skip compressing.  Intermediate products (compressed image files, for example)
+will be put into a build subdirectory; the font will be at the top level.
 
 ## License
 

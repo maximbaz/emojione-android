@@ -105,13 +105,13 @@ else
 	@cp "$<" "$@"
 endif
 
+define NL
+
+
+endef
+
 rename: $(ALL_FILES)
-	@$(subst ^, , \
-	  $(join \
-	    $(ALL_FILES:%=mv^%^), \
-	    $(ALL_COMPRESSED_FILES:%=%;^) \
-	  ) \
-	)
+	$(foreach pair, $(join $(ALL_FILES:%=%^), $(ALL_COMPRESSED_FILES)), @mv $(subst ^, ,$(pair))$(NL))
 
 $(ALL_COMPRESSED_FILES): rename
 

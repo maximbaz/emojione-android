@@ -193,7 +193,6 @@
 26f9_1f3fd;26f9_1f3fd_200d_2642 # medium skin tone
 26f9_1f3fe;26f9_1f3fe_200d_2642 # medium-dark skin tone
 26f9_1f3ff;26f9_1f3ff_200d_2642 # dark skin tone
-fe82b;unknown_flag # no name -> no name
 
 # flag aliases
 1f1e7_1f1fb;1f1f3_1f1f4 # BV -> NO
@@ -221,12 +220,12 @@ fe82b;unknown_flag # no name -> no name
 1f9d8_1f3fd;1f9d8_1f3fd_200d_2640 # medium skin tone
 1f9d8_1f3fe;1f9d8_1f3fe_200d_2640 # medium-dark skin tone
 1f9d8_1f3ff;1f9d8_1f3ff_200d_2640 # dark skin tone
-1f9d9;1f9d9_200d_2640 # MAGE -> female mage
-1f9d9_1f3fb;1f9d9_1f3fb_200d_2640 # light skin tone
-1f9d9_1f3fc;1f9d9_1f3fc_200d_2640 # medium-light skin tone
-1f9d9_1f3fd;1f9d9_1f3fd_200d_2640 # medium skin tone
-1f9d9_1f3fe;1f9d9_1f3fe_200d_2640 # medium-dark skin tone
-1f9d9_1f3ff;1f9d9_1f3ff_200d_2640 # dark skin tone
+1f9d9;1f9d9_200d_2642 # MAGE -> male mage
+1f9d9_1f3fb;1f9d9_1f3fb_200d_2642 # light skin tone
+1f9d9_1f3fc;1f9d9_1f3fc_200d_2642 # medium-light skin tone
+1f9d9_1f3fd;1f9d9_1f3fd_200d_2642 # medium skin tone
+1f9d9_1f3fe;1f9d9_1f3fe_200d_2642 # medium-dark skin tone
+1f9d9_1f3ff;1f9d9_1f3ff_200d_2642 # dark skin tone
 1f9da;1f9da_200d_2640 # FAIRY -> female fairy
 1f9da_1f3fb;1f9da_1f3fb_200d_2640 # light skin tone
 1f9da_1f3fc;1f9da_1f3fc_200d_2640 # medium-light skin tone
@@ -253,11 +252,3 @@ fe82b;unknown_flag # no name -> no name
 1f9dd_1f3ff;1f9dd_1f3ff_200d_2640 # dark skin tone
 1f9de;1f9de_200d_2640 # GENIE -> female genie
 1f9df;1f9df_200d_2640 # ZOMBIE -> female zombie
-
-# legacy android sequences
-# wrestlers -> men wrestling
-1f93c_1f3fb;1f93c_1f3fb_200d_2642 # light skin tone
-1f93c_1f3fc;1f93c_1f3fc_200d_2642 # medium-light skin tone
-1f93c_1f3fd;1f93c_1f3fd_200d_2642 # medium skin tone
-1f93c_1f3fe;1f93c_1f3fe_200d_2642 # medium-dark skin tone
-1f93c_1f3ff;1f93c_1f3ff_200d_2642 # dark skin tone

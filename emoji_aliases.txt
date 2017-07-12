@@ -221,11 +221,11 @@
 1f9d8_1f3fe;1f9d8_1f3fe_200d_2640 # medium-dark skin tone
 1f9d8_1f3ff;1f9d8_1f3ff_200d_2640 # dark skin tone
 1f9d9;1f9d9_200d_2642 # MAGE -> male mage
-1f9d9_1f3fb;1f9d9_1f3fb_200d_2642 # light skin tone
-1f9d9_1f3fc;1f9d9_1f3fc_200d_2642 # medium-light skin tone
-1f9d9_1f3fd;1f9d9_1f3fd_200d_2642 # medium skin tone
-1f9d9_1f3fe;1f9d9_1f3fe_200d_2642 # medium-dark skin tone
-1f9d9_1f3ff;1f9d9_1f3ff_200d_2642 # dark skin tone
+1f9d9_1f3fb;1f9d9_1f3fb_200d_2640 # light skin tone
+1f9d9_1f3fc;1f9d9_1f3fc_200d_2640 # medium-light skin tone
+1f9d9_1f3fd;1f9d9_1f3fd_200d_2640 # medium skin tone
+1f9d9_1f3fe;1f9d9_1f3fe_200d_2640 # medium-dark skin tone
+1f9d9_1f3ff;1f9d9_1f3ff_200d_2640 # dark skin tone
 1f9da;1f9da_200d_2640 # FAIRY -> female fairy
 1f9da_1f3fb;1f9da_1f3fb_200d_2640 # light skin tone
 1f9da_1f3fc;1f9da_1f3fc_200d_2640 # medium-light skin tone

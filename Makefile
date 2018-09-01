@@ -23,6 +23,8 @@ ZOPFLIPNG = zopflipng
 OPTIPNG = optipng
 
 EMOJI_BUILDER = third_party/color_emoji/emoji_builder.py
+# flag for emoji builder.  Default to legacy small metrics for the time being.
+SMALL_METRICS := -S
 ADD_GLYPHS = add_glyphs.py
 ADD_GLYPHS_FLAGS = -a emoji_aliases.txt
 PUA_ADDER = map_pua_emoji.py
@@ -134,7 +136,7 @@ $(ALL_COMPRESSED_FILES): rename
 
 $(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	$(ALL_COMPRESSED_FILES) | check_vs_adder
-	@python2 $(EMOJI_BUILDER) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
+	@python2 $(EMOJI_BUILDER) $(SMALL_METRICS) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
 	@python2 $(PUA_ADDER) "$@" "$@-with-pua"
 	@$(VS_ADDER) -vs 2640 2642 2695 --dstdir '.' -o "$@-with-pua-varsel" "$@-with-pua"
 	@mv "$@-with-pua-varsel" "$@"

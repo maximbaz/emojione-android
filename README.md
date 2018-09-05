@@ -13,7 +13,10 @@ especially if you are using zopflipng for compression.  Or you can use `NOCOMPRE
 to skip compressing.  Intermediate products (compressed image files, for example)
 will be put into a build subdirectory; the font will be at the top level.
 
-Prebuilt font file: [EmojiOne.ttf](https://github.com/mxalbert1996/emojione-android/raw/master/fonts/EmojiOne.ttf)
+## Prebuilt font file
+[EmojiOne.ttf](https://github.com/mxalbert1996/emojione-android/raw/master/fonts/EmojiOne.ttf)
+
+[EmojiOne_Watergun.ttf](https://github.com/mxalbert1996/emojione-android/raw/master/fonts/EmojiOne_Watergun.ttf) (Watergun alternative)
 
 ## License
 

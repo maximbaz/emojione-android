@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-EMOJI = EmojiOne
+EMOJI = JoyPixels
 font: $(EMOJI).ttf
 
 # zopflipng is better (about 5-10%) but much slower.  it will be used if
